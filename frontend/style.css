@@ -114,14 +114,29 @@ button{
   display:flex;
   justify-content:center;
   align-items:center;
-  background:linear-gradient(135deg,#e8fff5,#c7f3df);
+
+  background:
+    linear-gradient(
+      rgba(232,255,245,0.6),
+      rgba(199,243,223,0.6)
+    ),
+    url("college.png");
+
+  background-size:cover;
+  background-position:center;
+
   font-family:Arial;
 }
 
 .splash-box{
   text-align:center;
+  background:rgba(255,255,255,0.85);
+  padding:30px 40px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.15);
   animation:fadeIn 1.5s ease-in-out;
 }
+
 
 .logo{
   width:120px;
