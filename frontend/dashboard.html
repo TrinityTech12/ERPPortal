@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ERP Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dash-bg">
+
+<!-- Header -->
+<div class="header">
+  <h3>ERP Smart Campus</h3>
+</div>
+
+<!-- Profile -->
+<div class="profile">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+  <h3 id="name"></h3>
+
+  <p>
+    <span id="sem"></span> Semester |
+    <span id="dept"></span>
+  </p>
+
+</div>
+
+<!-- Grid Menu -->
+<div class="grid">
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+    <p>Profile</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png">
+    <p>Fees</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/1827/1827392.png">
+    <p>Notice</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png">
+    <p>Assignment</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png">
+    <p>Circular</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png">
+    <p>Attendance</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png">
+    <p>Calendar</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+    <p>Marks</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png">
+    <p>Library</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png">
+    <p>Placement</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png">
+    <p>Training</p>
+  </div>
+
+  <div class="box logout" onclick="logout()">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828479.png">
+    <p>Logout</p>
+  </div>
+
+</div>
+
+<script>
+
+let data = JSON.parse(localStorage.getItem("student"));
+
+if(!data){
+  location.href="login.html";
+}
+
+name.innerText = data.name;
+sem.innerText = data.sem;
+dept.innerText = data.dept;
+
+function logout(){
+
+  localStorage.clear();
+  location.href="login.html";
+
+}
+
+</script>
+
+</body>
+</html>

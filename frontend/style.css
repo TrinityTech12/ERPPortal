@@ -1,0 +1,161 @@
+/* LOGIN */
+
+.login-bg{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(#f0fff7,#d7f5e8);
+  font-family:Arial;
+}
+
+.login-box{
+  background:white;
+  width:320px;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 0 15px #aaa;
+}
+
+.login-icon{
+  width:70px;
+  height:70px;
+  background:#1abc9c;
+  border-radius:50%;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:30px;
+}
+
+input{
+  width:90%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:7px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:95%;
+  padding:10px;
+  background:#1abc9c;
+  color:white;
+  border:none;
+  border-radius:7px;
+  cursor:pointer;
+}
+
+
+/* DASHBOARD */
+
+.dash-bg{
+  margin:0;
+  font-family:Arial;
+  background:#eefaf4;
+}
+
+.header{
+  background:#0f766e;
+  color:white;
+  padding:15px;
+  text-align:center;
+}
+
+.profile{
+  text-align:center;
+  padding:20px;
+}
+
+.profile img{
+  width:90px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  padding:20px;
+}
+
+.box{
+  background:white;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  margin:auto;
+  text-align:center;
+  padding:15px;
+  box-shadow:0 0 8px gray;
+  cursor:pointer;
+}
+
+.box img{
+  width:40px;
+  margin-top:10px;
+}
+
+.box p{
+  font-size:13px;
+}
+
+.logout{
+  border:2px solid red;
+}
+/* SPLASH SCREEN */
+
+.splash-bg{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#e8fff5,#c7f3df);
+  font-family:Arial;
+}
+
+.splash-box{
+  text-align:center;
+  animation:fadeIn 1.5s ease-in-out;
+}
+
+.logo{
+  width:120px;
+  margin-bottom:15px;
+}
+
+.splash-box h1{
+  color:#065f46;
+  margin:5px 0;
+}
+
+.splash-box p{
+  color:#047857;
+  font-size:14px;
+}
+
+/* Loading Animation */
+
+.loader{
+  width:40px;
+  height:40px;
+  border:4px solid #a7f3d0;
+  border-top:4px solid #047857;
+  border-radius:50%;
+  margin:20px auto;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:scale(0.9);}
+  to{opacity:1; transform:scale(1);}
+}

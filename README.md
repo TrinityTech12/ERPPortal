@@ -1,2 +1,19 @@
 # ERPPortal
-ERP Portal for managing academic, administrative, and operational activities.
+
+Web-based ERP Portal for college/school management.
+
+## Features
+- Student Login
+- Admin Panel
+- Attendance
+- Fees
+- Reports
+
+## Technologies
+- HTML, CSS, JavaScript
+- Backend (Later)
+- Database (MySQL)
+
+## Team
+- Sneha
+- Members
